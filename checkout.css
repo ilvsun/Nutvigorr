@@ -1,0 +1,78 @@
+
+#checkout{
+    display: flex;
+}
+#checkout #info{
+    flex-basis: 60%;
+}
+#checkout #customer-info{
+    flex-basis: 40%;
+}
+#checkout #cart-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+#checkout #cart-table img {
+    max-width: 100px; 
+    max-height: 100px; ;
+}
+
+#checkout #cart-table th, #cart-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#checkout #cart-table th {
+    background-color: #4caf50;
+    color: white;
+}
+#checkout .addres{
+    display: flex;
+}
+
+#checkout #checkout-form {
+    display: grid;
+    gap: 10px;
+    max-width: 450px;
+    margin-top: 20px;
+}
+
+#checkout input,#checkout textarea  {
+    width: 98%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #4CAF50; 
+    border-radius: 10px; 
+}
+#checkout select{
+    width: 110%;
+    padding: 15px 8px;
+    margin-right: 10px;
+    border: 2px solid #4CAF50; 
+    border-radius: 10px; 
+}
+
+#checkout button {
+    width: 98%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#checkout button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    #checkout {
+        flex-direction: column;
+    }
+}
